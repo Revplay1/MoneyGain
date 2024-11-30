@@ -20,7 +20,6 @@
         app:layout_constraintVertical_bias="0.042" />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -31,22 +30,16 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"
-            android:layout_width="387dp"
             android:layout_height="wrap_content"
             app:boxBackgroundMode="none"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:suffixText="$">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/inptMoney"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Contributions: "
-                android:inputType="numberDecimal"
-                android:maxLength="10"
                 android:text=""
                 android:textColor="@color/moneygain"
                 android:textColorHint="@color/moneygain" />
@@ -59,7 +52,6 @@
             android:layout_width="409dp"
             android:layout_height="wrap_content"
             app:boxBackgroundMode="none"
-            app:suffixText="#"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -67,11 +59,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/inptMonths"
-                android:layout_width="390dp"
                 android:layout_height="wrap_content"
                 android:hint="Months:"
-                android:inputType="numberDecimal"
-                android:maxLength="3"
                 android:text=""
                 android:textColor="@color/moneygain"
                 android:textColorHint="@color/moneygain" />
@@ -84,48 +73,15 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
-            app:suffixText="%"
-            tools:ignore="ExtraText">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/inptPerc"
-                android:layout_width="391dp"
                 android:layout_height="wrap_content"
                 android:hint="Percentage:"
-                android:inputType="numberDecimal"
-                android:maxLength="5"
                 android:textColor="@color/moneygain"
                 android:textColorHint="@color/moneygain" />/>
         </com.google.android.material.textfield.TextInputLayout>
-
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btnCalc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_button"
-        android:drawableEnd="@drawable/currency_exchange"
-        android:text="Calculate"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
-
-    <TextView
-        android:id="@+id/resultText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:maxLength="6"
-        android:textAlignment="center"
-        android:textColor="@color/moneygain"
-        android:textSize="56sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
