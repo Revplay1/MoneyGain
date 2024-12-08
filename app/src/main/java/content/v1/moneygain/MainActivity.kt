@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // Hide system bars for fullscreen mode based on Android version
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             window.setDecorFitsSystemWindows(false)
             window.insetsController?.hide(
